@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #ticTacToeBoard {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-gap: 5px;
+    }
+
+    .cell {
+      width: 100px;
+      height: 100px;
+      font-size: 24px;
+      text-align: center;
+      line-height: 100px;
+      border: 2px solid #000;
+      cursor: pointer;
+    }
+  </style>
+  <title>Tic-Tac-Toe</title>
+</head>
+<body>
+
+<div id="ticTacToeBoard"></div>
+
+<script>
+  // JavaScript logic for the Tic-Tac-Toe game
+  document.addEventListener("DOMContentLoaded", function () {
+    const board = document.getElementById("ticTacToeBoard");
+    let currentPlayer = "X";
+    let gameBoard = ["", "", "", "", "", "", "", "", ""];
+
+    function checkWinner() {
+      const winPatterns = [
+        [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
+        [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
+        [0, 4, 8], [2, 4, 6]             // Diagonals
+      ];
+
+      for (const pattern of winPatterns) {
+        const [a, b, c] = pattern;
+        if (gameBoard[a] && gameBoard[a] === gameBoard[b] && gameBoard[a] === gameBoard[c]) {
+          return gameBoard[a];
+        }
+      }
+
+      return null;
+    }
+
+    function checkTie() {
+      return !gameBoard.includes("");
+    }
+
+    function handleCellClick(index) {
+      if (gameBoard[index] === "" && !checkWinner() && !checkTie()) {
+        gameBoard[index] = currentPlayer;
+        renderBoard();
+        const winner = checkWinner();
+
+        if (winner) {
+          alert(`Player ${winner} wins!`);
+        } else if (checkTie()) {
+          alert("It's a tie!");
+        } else {
+          currentPlayer = currentPlayer === "X" ? "O" : "X";
+        }
+      }
+    }
+
+    function renderBoard() {
+      board.innerHTML = "";
+      gameBoard.forEach((value, index) => {
+        const cell = document.createElement("div");
+        cell.classList.add("cell");
+        cell.textContent = value;
+        cell.addEventListener("click", () => handleCellClick(index));
+        board.appendChild(cell);
+      });
+    }
+
+    renderBoard();
+  });
+</script>
+
+</body>
+</html>

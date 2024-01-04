@@ -1,0 +1,36 @@
+.c{
+    height: 800px;
+    width: 800px;
+}
+.b{
+    height: 25px;
+    width: 800px;
+    border: 1px solid white;
+
+}
+.d{
+    height:450px ;
+    width: 300px;
+    background-color: white;
+    margin-top: 25px;
+    margin-left: 50px;
+    float: left;
+    box-shadow: 3PX 3PX 5PX aqua;
+}
+.e{
+    float: right;
+    background-color: white;
+    height:250px;
+    width:400px;
+    margin-top: 25px;
+    margin-left: 25px;
+    box-shadow: 3PX 3PX 5PX aqua;
+}
+.f{
+    background-color: white;
+    height: 250px;
+    width: 400px;
+    margin-top: 70px;
+    margin-left: 7px;
+    box-shadow: 3px 3px 5px aqua;
+}

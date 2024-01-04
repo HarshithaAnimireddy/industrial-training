@@ -1,0 +1,114 @@
+.a{
+    height: 1000px;
+    width: 100%;
+    background-color: silver;
+}
+.b{
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid white;
+}
+.c{
+    height: 25px;
+    width: 10%;
+    background-color: lawngreen;
+    border: 1px solid lawngreen;
+    margin-left: 10%;
+    margin-top: 12.5px;
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.d{
+    height: 25px;
+    width: 10%;
+    background-color: skyblue;
+    border: 1px solid skyblue;
+    margin-left: 5%;
+    margin-top: 12.5px;
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.e{
+    height: 25px;
+    width: 15%;
+    background-color: red;
+    border: 1px solid red;
+    margin-right: 10%;
+    margin-top: 12.5px;
+    float: left;
+    margin-left: 5%;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.f{
+    height: 400px;
+    width: 25%;
+    background-color: white;
+    border: 1px solid white;
+    margin-left: 20%;
+    margin-top: 50px;
+    float: left;
+}
+.g{
+    height: 400px;
+    width: 25%;
+    background-color: white;
+    border: 1px solid white;
+    margin-left: 10%;
+    margin-top: 50px;
+    float: left;
+}
+.h{
+    height: 400px;
+    width: 25%;
+    background-color: white;
+    border: 1px solid white;
+    margin-left: 20%;
+    margin-top: 50px;
+    float: left;
+}
+.i{
+    height: 400px;
+    width: 25%;
+    background-color: white;
+    border: 1px solid white;
+    margin-left: 10%;
+    margin-top: 50px;
+    float: left;
+}
+#z1{
+   height: 100px;
+   width: 100px;
+   border-radius: 100%; 
+   margin-top: 15px;
+   margin-left: 15px;
+   background-color: silver;
+}
+.j{
+    height: 220px;
+    width: 2px;
+    background-color: silver;
+    border: 1px solid silver;
+    margin-left: 65px;
+}
+.k{
+    height: 20px;
+    width: 20px;
+    background-color: lightseagreen;
+    margin-top: 50px;
+    border-radius: 100%;
+    text-align: center;
+    margin-right: 10px;
+}
+.l{
+    float: left;
+}

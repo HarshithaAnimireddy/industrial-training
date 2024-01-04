@@ -1,0 +1,24 @@
+.b{
+    height: 200px;
+    width: 800px;
+    {
+        height: 200px;
+        width: 200px;
+    }
+}
+.c{
+    height: 100px;
+    width: 800px;
+}
+.d{
+    height: 100px;
+    width: 800px;
+}
+.e{
+    height: 200px;
+    width: 800px;
+}
+.f{
+    height:200px ;
+    width: 800px;
+}
