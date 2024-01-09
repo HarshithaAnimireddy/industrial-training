@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>animations</title>
+        <style>
+            .a{
+                height:200px;
+                width: 200px;
+                position: relative;
+                background-color: blue;
+                border:  1px solid blue;
+                animation-name: dummy;
+                animation-duration: 10s;
+                animation-direction: reverse;
+                animation-fill-mode: both;
+                animation-timing-function: linear;
+                animation-iteration-count: 5;
+                animation-delay: 5s;
+            }
+            @keyframes dummy{
+                /*from{
+                    background-color: red;
+                }
+                to{
+                    background-color: green;
+                    border-radius: 100%;
+                    margin-top: 50px;
+                    transform: rotate(90deg);
+                    border: 1px dotted red;
+                    transform: translate(50px,20px);
+                }*/
+                0%{
+                    background-color: aliceblue;top: 0px; left: 0px;
+                }
+                25%{
+                    background-color: red ;top:0px;left:400px ;
+                }
+                50%{
+                    background-color: green; top: 400px; left:40px ;
+                    transform: rotate(180deg);
+                    border-radius: 100%;
+                }
+            }
+            .b{
+                height:200px;
+                width: 200px;
+                position: relative;
+                background-color: blue;
+                border:  1px solid blue;
+                float: right;
+                animation-name: anime;
+                animation-duration: 15s;
+                animation-fill-mode: both;
+                animation-timing-function: linear;
+                animation-iteration-count: 6;
+                animation-delay: 3s;
+            }
+            @keyframes anime{
+                0%{
+                    background-color: aliceblue;top: 0px; left: 0px;
+                }
+                25%{
+                    background-color: red ;top:0px;left:400px ;
+                }
+                50%{
+                    background-color: green; top: 400px; left:40px ;
+                    transform: rotate(180deg);
+                    border-radius: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <center><h1>ANIMATIONS IN CSS</h1></center>
+        <hr>
+        <div class="a"></div>
+        <div class="b"></div>
+    </body>
+</html>
