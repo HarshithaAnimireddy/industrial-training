@@ -1,0 +1,51 @@
+.a{
+    height: 700px;
+    width: 95%;
+    background-color: white;
+    border: 3px solid black;
+    margin: 30px;
+}
+.b{
+    height: 450px;
+    width: 67.5%;
+    margin-top: 30px;
+    margin-left: 15%;
+    background-color: silver;
+    border: 1px solid silver;
+}
+.z1{
+    font-size: 30px;
+    margin-top:60px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.c{
+    height: 449.5px;
+    width: 65%;
+    background-color:silver;
+    border: 1px solid silver;
+    float: left;
+}
+.d{
+        height: 449.5px;
+        width: 34%;
+        background-color:silver;
+        border: 1px solid white;
+        float: right;
+}
+#z2{
+       height: 449.5px;
+       width: 100%;
+}
+.z3{
+    font-size: 30px;
+    margin-left: 5%;
+    margin-top: 15px;
+}
+.z4{
+    height: 100px;
+    margin-left: 5%;
+    width: 150px;
+    font-size: 15px;
+    color: silver;
+}
